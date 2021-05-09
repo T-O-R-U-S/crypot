@@ -5,6 +5,7 @@ Basic idea:
 - Take UTF-8 file
 - For (index, char) in UTF-8 enumerated file:
     Return (charcode of char) * (charcode of user-input string\[index])
+
 Why it doesn't work:
   As it turns out, multiplying 100 by 100 returns a value GREATER than 255... however, I 
   cannot write to files using the standard library unless I am using utf-8. I have not
