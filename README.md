@@ -7,6 +7,5 @@ Basic idea:
     Return (charcode of char) * (charcode of user-input string\[index])
 
 Why it doesn't work:
-  - As it turns out, multiplying 100 by 100 returns a value GREATER than 255... however, I 
-  cannot write to files using the standard library unless I am using utf-8. I have not
-  found a way to encode utf-16 into utf-8 so I am processing it directly using u8 chars
+  - As it turns out, multiplying 100 by 100 returns a value GREATER than 255... overflow. however, I cannot write to files using the standard library unless I am
+  using utf-8. I have not found a way to encode utf-16 into utf-8 so I am processing it directly using u8 chars
